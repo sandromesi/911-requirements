@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-floating:focus-within {
+    z-index: 2;
+  }
+
+/* #dropdown-user img {
+    margin-left: 50px;
+} */
+
+
+
+.message {
+    font-style: italic;
+    text-decoration: underline;
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
+
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 280px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper {
+    padding-left: 280px;
+}
+
