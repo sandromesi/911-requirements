@@ -1,19 +1,22 @@
-<nav class="navbar">
+<nav class="navbar pb-4">
     <div class="container-fluid">
-        <div class="col-10">
-            <a id="menu-toggle">
+        <div class="col-1">
+            <!-- <a id="menu-toggle" class="openbtn">
                 <svg class="bi me-2" width="25" height="25">
-                    <use href="../static/icons.svg#menu"/>
+                    <use href="../static/icons.svg#menu" />
                 </svg>
-            </a>
+            </a> -->
+        </div>
+        <div class="col-9">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
         </div>
         <div class="col-2">
-            <div class="dropdown">
+            <div class="dropdown mx-auto">
                 <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                     id="dropdown-user" data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong>sandromesi</strong>
+                    <strong class="text-secondary">sandromesi</strong>
                     <img src="https://avatars.githubusercontent.com/u/62498755?v=4" alt="" width="32" height="32"
-                        class="rounded-circle ms-5">    
+                        class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow " aria-labelledby="dropdown-user">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -27,5 +30,24 @@
             </div>
         </div>
     </div>
-    </div>
 </nav>
+
+<script>
+
+    document.querySelector(".openbtn").addEventListener("click", toggle)
+
+    function toggle() {
+
+        var sidebar = document.getElementById("sidebar");
+        var toggledSidebar = document.getElementById("toggledSidebar");
+
+        if (sidebar.style.display === "none" && toggledSidebar.style.display === "flex") {
+            sidebar.style.display = "flex";
+            toggledSidebar.style.display = "none";
+        } else {
+            sidebar.style.display = "none";
+            toggledSidebar.style.display = "flex";
+        }
+    }
+
+</script>

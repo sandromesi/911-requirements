@@ -4,7 +4,6 @@
 
 /resources
 /workbooks
-/js
 main.py
 file_handler.py
 ip_list.txt

@@ -1,4 +1,4 @@
-from importlib.resources import path
+#from importlib.resources import path
 from flask import Flask, render_template, request
 import network_automation
 import csv
@@ -40,5 +40,5 @@ def submit():
         return render_template('success.html', filepath = filepath)
 
 if __name__ == '__main__':
-    app.debug = True
+    #app.debug = True
     app.run()
